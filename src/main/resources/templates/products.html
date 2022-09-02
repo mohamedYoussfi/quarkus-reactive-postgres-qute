@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.2.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-2">
+    <table class="table">
+        <tr>
+            <th>ID</th> <th>Name</th> <th>Price</th> <th>Quantity</th>
+        </tr>
+        {#for p in products }
+            <tr>
+            <td>{p.id}</td>
+            <td>{p.name}</td>
+            <td>{p.price}</td>
+            <td>{p.quantity}</td>
+            </tr>
+        {/for}
+    </table>
+</div>
+</body>
+</html>
